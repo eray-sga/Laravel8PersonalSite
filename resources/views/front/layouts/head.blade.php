@@ -6,8 +6,8 @@
 ================================================== -->
 <title>@yield('title') ERAY KALKAN</title>
 <meta charset="UTF-8">
-<meta name="description" content="Mat - Resume & vCard HTML Template">
-<meta name="keywords" content="personal, vcard, portfolio">
+<meta name="description" content="@yield('description','Eray KALKAN Kişisel Web Sitesidir.')">
+<meta name="keywords" content="@yield('keyword','Eray Kalkan, Siber Güvenlik, yazılım, yazılım güvenliği eğitimleri')">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 <!-- Favicon
