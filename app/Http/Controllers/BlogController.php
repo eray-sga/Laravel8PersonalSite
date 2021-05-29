@@ -22,13 +22,12 @@ class BlogController extends Controller
     {
         $validated = $request->validate([
             'title' => 'required',
-            'slug' => 'required',
             'editor1' => 'required',
         ]);
 
         $service = DB::table('blogs')->insert([
                 'title' => $request->input('title'),
-                'slug' => $request->input('slug'),
+                'slug' => Str::slug($request->title,'-'),
                 'description' => $request->input('editor1')
         ]);
 
