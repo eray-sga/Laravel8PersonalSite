@@ -23,10 +23,7 @@
                       <label for="exampleInputEmail1">Başlık</label>
                       <input name="title" value="{{$blogedit->title}}" type="text"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">URL</label>
-                        <input name="slug" value="{{$blogedit->slug}}" type="text"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
+                    
                     <div class="form-group">
                         <label for="exampleInputPassword1">İçerik</label>
                         <textarea name="editor1" class="form-control">
