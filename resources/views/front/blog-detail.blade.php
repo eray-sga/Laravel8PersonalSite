@@ -1,5 +1,7 @@
 @extends('front.layout')
 @section('title') Blog Detay - @endsection
+@section('description'){{$blog->title}}@endsection
+@section('keyword'){{$blog->title}}@endsection
 @section('body')
 <div id="blog-post">
     <div class="row">
