@@ -36,11 +36,7 @@
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Blog</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Genel Ayarlar</span></a>
-            </li>
+            
             <li class="nav-item active">
                 <a onclick="return confirm('Gidene kal, kalana git denmez. Çıkış yapıyorsun.')" class="nav-link" href="{{route('logout')}}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
