@@ -46,7 +46,6 @@ class BlogController extends Controller
     {
         $validated = $request->validate([
             'title' => 'required',
-            'slug' => 'required',
             'editor1' => 'required',
         ]);
 
@@ -54,7 +53,7 @@ class BlogController extends Controller
               ->where('id', $request->input('id'))
               ->update([
                 'title' => $request->input('title'),
-                'slug' => $request->input('slug'),
+                'slug' => Str::slug($request->title,'-'),
                 'description' => $request->input('editor1')
                   ]);
 
