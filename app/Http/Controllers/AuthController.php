@@ -22,7 +22,7 @@ class AuthController extends Controller
     {
         if(Auth::attempt(['email'=>$request->email,'password'=>$request->password]))
         {
-            toastr()->success('Mermiler seksin bu alemde teksin hoş geldin '.Auth::user()->name);
+            toastr()->success('Hoş geldin '.Auth::user()->name);
             return redirect()->route('adminlogin');
         }
         return redirect()->route('login')->withErrors('Miyavvv, doğru gir tırnaklarım!');
